@@ -1,8 +1,13 @@
 package java11.strings;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+@DisplayName("StringsDemo")
 public class StringsDemo {
 
-    public static void main(String... args) {
+    @Test
+    void shouldString() {
         System.out.println("\"\".isBlank() = " + "".isBlank());
         System.out.println("\"dog\".repeat(3) = " + "dog".repeat(3));
         System.out.println("\"  dog  \".strip() = " + "  dog  ".strip());
