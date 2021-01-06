@@ -1,0 +1,14 @@
+language: java
+
+dist: trusty
+sudo: false
+
+jdk:
+- oraclejdk11
+- openjdk11
+
+script:
+# Display Gradle, Groovy, JVM and other versions
+  - ./gradlew --version
+# Run all tests
+  - ./gradlew test
