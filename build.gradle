@@ -8,7 +8,7 @@ repositories {
 }
 
 test {
-    dependsOn(':jdk9:test', ':jdk10:test', ':jdk11:test')
+    dependsOn(':jdk9:test', ':jdk10:test', ':jdk11:test', ':jdk14:test')
 }
 
 allprojects {
