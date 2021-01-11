@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 8:19
+ * @create 2019 ÏÂÎç 8:19
  */
 public class StringTest {
     @Test
@@ -18,7 +18,7 @@ public class StringTest {
         System.out.println(info1);
     }
     //   hello --> helloworld   -->   HELLOWORLD   --> HELLOWORLD
-    //æ˜ å°„ï¼šjava 8 ä¸­ Stream API :map() \reduce()
+    //Ó³Éä£ºjava 8 ÖÐ Stream API :map() \reduce()
     @Test
     public void testTransform1(){
         var info1 = "hello".transform(info -> info + "world").transform(String::toUpperCase).transform(String::trim);
@@ -46,7 +46,7 @@ public class StringTest {
         list2.forEach(System.out::println);
     }
 
-    //Stringä¸­çš„indent()
+    //StringÖÐµÄindent()
     @Test
     public void testIndent() {
         System.out.println("======test java 12 indent======");

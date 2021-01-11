@@ -6,23 +6,23 @@ import org.junit.jupiter.api.Test;
 import java.util.HashSet;
 
 /**
- *  Recordç±»å‹çš„æ¼”ç¤º
+ *  RecordÀàĞÍµÄÑİÊ¾
  *
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 6:13
+ * @create ÏÂÎç 6:13
  */
 public class Feature03 {
-    @Test
+    /*@Test
     public void test1(){
-        //æµ‹è¯•æ„é€ å™¨
-        Person p1 = new Person("ç½—å¯†æ¬§",new Person("zhuliye",null));
-        //æµ‹è¯•toString()
+        //²âÊÔ¹¹ÔìÆ÷
+        Person p1 = new Person("ÂŞÃÜÅ·",new Person("zhuliye",null));
+        //²âÊÔtoString()
         System.out.println(p1);
-        //æµ‹è¯•equals():
-        Person p2 = new Person("ç½—å¯†æ¬§",new Person("zhuliye",null));
+        //²âÊÔequals():
+        Person p2 = new Person("ÂŞÃÜÅ·",new Person("zhuliye",null));
         System.out.println(p1.equals(p2));
 
-        //æµ‹è¯•hashCode()å’Œequals()
+        //²âÊÔhashCode()ºÍequals()
         HashSet<Person> set = new HashSet<>();
         set.add(p1);
         set.add(p2);
@@ -31,7 +31,7 @@ public class Feature03 {
             System.out.println(person);
         }
 
-        //æµ‹è¯•name()å’Œpartner():ç±»ä¼¼äºgetName()å’ŒgetPartner()
+        //²âÊÔname()ºÍpartner():ÀàËÆÓÚgetName()ºÍgetPartner()
         System.out.println(p1.name());
         System.out.println(p1.partner());
 
@@ -46,5 +46,5 @@ public class Feature03 {
         Person.nation = "CHN";
         System.out.println(Person.showNation());
 
-    }
+    }*/
 }

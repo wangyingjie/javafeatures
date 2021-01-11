@@ -2,11 +2,11 @@ package java14.com.atguigu.feature;
 
 /**
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 6:20
+ * @create ÏÂÎç 6:20
  */
-public record Person(String name,Person partner) {
+/*public record Person(String name,Person partner) {
 
-    //è¿˜å¯ä»¥å£°æ˜é™æ€çš„å±æ€§ã€é™æ€çš„æ–¹æ³•ã€æ„é€ å™¨ã€å®ä¾‹æ–¹æ³•
+    //»¹¿ÉÒÔÉùÃ÷¾²Ì¬µÄÊôĞÔ¡¢¾²Ì¬µÄ·½·¨¡¢¹¹ÔìÆ÷¡¢ÊµÀı·½·¨
 
     public static String nation;
 
@@ -21,16 +21,16 @@ public record Person(String name,Person partner) {
     public String getNameInUpperCase(){
         return name.toUpperCase();
     }
-    //ä¸å¯ä»¥å£°æ˜éé™æ€çš„å±æ€§
-//    private int id;//æŠ¥é”™
-}
+    //²»¿ÉÒÔÉùÃ÷·Ç¾²Ì¬µÄÊôĞÔ
+//    private int id;//±¨´í
+}*/
 
-//ä¸å¯ä»¥å°†recordå®šä¹‰çš„ç±»å£°æ˜ä¸ºabstractçš„
+//²»¿ÉÒÔ½«record¶¨ÒåµÄÀàÉùÃ÷ÎªabstractµÄ
 //abstract record Order(){
 //
 //}
 
-//ä¸å¯ä»¥ç»™recordå®šä¹‰çš„ç±»å£°æ˜æ˜¾å¼çš„çˆ¶ç±»ï¼ˆéRecordç±»ï¼‰
+//²»¿ÉÒÔ¸ørecord¶¨ÒåµÄÀàÉùÃ÷ÏÔÊ½µÄ¸¸Àà£¨·ÇRecordÀà£©
 //record Order() extends Thread{
 //
 //}

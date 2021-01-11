@@ -4,51 +4,51 @@ package java14.com.atguigu.feature;
 import org.junit.jupiter.api.Test;
 
 /**
- * 1. JEP 305ï¼šinstanceofçš„æ¨¡å¼åŒ¹é…ï¼ˆé¢„è§ˆï¼‰
+ * 1. JEP 305£ºinstanceofµÄÄ£Ê½Æ¥Åä£¨Ô¤ÀÀ£©
  *
  * @author shkstart Email:shkstart@126.com
- * @create ä¸Šåˆ 11:32
+ * @create ÉÏÎç 11:32
  */
 public class Feature01 {
     @Test
     public void test1(){
 
         Object obj = new String("hello,Java14");
-        obj = null;//åœ¨ä½¿ç”¨null åŒ¹é…instanceof æ—¶ï¼Œè¿”å›éƒ½æ˜¯false.
+        obj = null;//ÔÚÊ¹ÓÃnull Æ¥Åäinstanceof Ê±£¬·µ»Ø¶¼ÊÇfalse.
         if(obj instanceof String){
             String str = (String) obj;
             System.out.println(str.contains("Java"));
         }else{
-            System.out.println("éStringç±»å‹");
+            System.out.println("·ÇStringÀàĞÍ");
         }
 
-        //ä¸¾ä¾‹1ï¼š
-        if(obj instanceof String str){ //æ–°ç‰¹æ€§ï¼šçœå»äº†å¼ºåˆ¶ç±»å‹è½¬æ¢çš„è¿‡ç¨‹
-            System.out.println(str.contains("Java"));
-        }else{
-            System.out.println("éStringç±»å‹");
-        }
+        //¾ÙÀı1£º
+        // if(obj instanceof String str){ //ĞÂÌØĞÔ£ºÊ¡È¥ÁËÇ¿ÖÆÀàĞÍ×ª»»µÄ¹ı³Ì
+        //     System.out.println(str.contains("Java"));
+        // }else{
+        //     System.out.println("·ÇStringÀàĞÍ");
+        // }
     }
 }
 
-// ä¸¾ä¾‹2
+// ¾ÙÀı2
 class InstanceOf{
 
     String str = "abc";
 
     public void test(Object obj){
 
-        if(obj instanceof String str){//æ­¤æ—¶çš„strçš„ä½œç”¨åŸŸä»…é™äºifç»“æ„å†…ã€‚
-            System.out.println(str.toUpperCase());
-        }else{
-            System.out.println(str.toLowerCase());
-        }
+        // if(obj instanceof String str){//´ËÊ±µÄstrµÄ×÷ÓÃÓò½öÏŞÓÚif½á¹¹ÄÚ¡£
+        //     System.out.println(str.toUpperCase());
+        // }else{
+        //     System.out.println(str.toLowerCase());
+        // }
 
     }
 
 }
 
-//ä¸¾ä¾‹3ï¼š
+//¾ÙÀı3£º
 class Monitor{
     private String model;
     private double price;
@@ -63,8 +63,8 @@ class Monitor{
 //    }
 
 
-    public boolean equals(Object o){
-        return o instanceof Monitor other && model.equals(other.model) && price == other.price;
-    }
+    // public boolean equals(Object o){
+    //     return o instanceof Monitor other && model.equals(other.model) && price == other.price;
+    // }
 
 }

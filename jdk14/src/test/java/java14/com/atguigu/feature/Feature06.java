@@ -3,9 +3,9 @@ package java14.com.atguigu.feature;
 import java.util.ArrayList;
 
 /**
- *  åƒåœ¾æ”¶é›†å™¨çš„æ›´æ–°ï¼šâ‘  å¼ƒç”¨ParallelScavengeå’ŒSerialOld GCç»„åˆ
- *                  â‘¡ åˆ é™¤CMSåƒåœ¾å›æ”¶å™¨
- *                  â‘¢ ZGC å¯ä»¥åœ¨macOSå’ŒWindowsä¸Šä½¿ç”¨
+ *  À¬»øÊÕ¼¯Æ÷µÄ¸üĞÂ£º¢Ù ÆúÓÃParallelScavengeºÍSerialOld GC×éºÏ
+ *                  ¢Ú É¾³ıCMSÀ¬»ø»ØÊÕÆ÷
+ *                  ¢Û ZGC ¿ÉÒÔÔÚmacOSºÍWindowsÉÏÊ¹ÓÃ
  *  -XX:+UseParallelGC -XX:-UseParallelOldGC
  *
  *  -XX:-UseParallelOldGC
@@ -15,7 +15,7 @@ import java.util.ArrayList;
  *   -XX:+UnlockExperimentalVMOptions -XX:+UseZGC
  *
  * @author shkstart Email:shkstart@126.com
- * @create 2020-04-01 ä¸‹åˆ 4:02
+ * @create 2020-04-01 ÏÂÎç 4:02
  */
 public class Feature06 {
 

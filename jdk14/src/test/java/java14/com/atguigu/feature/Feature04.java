@@ -3,13 +3,13 @@ package java14.com.atguigu.feature;
 import org.junit.jupiter.api.Test;
 
 /**
- *  switchçš„æ–°ç‰¹æ€§
+ *  switchµÄĞÂÌØĞÔ
  *
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 12:10
+ * @create ÏÂÎç 12:10
  */
 public class Feature04 {
-    //jdk12ä¹‹å‰çš„ç”¨æ³•
+    //jdk12Ö®Ç°µÄÓÃ·¨
     @Test
     public void test1() {
 
@@ -36,7 +36,7 @@ public class Feature04 {
 
     }
 
-    //jdk12æ–°ç‰¹æ€§ï¼šå¼•ç”¨switchè¡¨è¾¾å¼
+    //jdk12ĞÂÌØĞÔ£ºÒıÓÃswitch±í´ïÊ½
     @Test
     public void test2(){
 
@@ -49,7 +49,7 @@ public class Feature04 {
             default -> throw new IllegalStateException("What day is today?" + day);
         }
 
-        //ä½¿ç”¨å˜é‡æ¥æ”¶switchè¡¨è¾¾å¼çš„å€¼
+        //Ê¹ÓÃ±äÁ¿½ÓÊÕswitch±í´ïÊ½µÄÖµ
         int num = switch (day) {
             case MONDAY, TUESDAY, WEDNESDAY -> 1;
             case THURSDAY -> 2;
@@ -62,7 +62,7 @@ public class Feature04 {
 
     }
 
-    //jdk13æ–°ç‰¹æ€§ï¼šå¼•ç”¨äº†yieldå…³é”®å­—ï¼Œç”¨äºè¿”å›æŒ‡å®šçš„æ•°æ®ï¼Œç»“æŸswitchç»“æ„
+    //jdk13ĞÂÌØĞÔ£ºÒıÓÃÁËyield¹Ø¼ü×Ö£¬ÓÃÓÚ·µ»ØÖ¸¶¨µÄÊı¾İ£¬½áÊøswitch½á¹¹
     @Test
     public void test3(){
         String x = "3";

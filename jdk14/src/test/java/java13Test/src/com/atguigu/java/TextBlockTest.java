@@ -1,173 +1,174 @@
-package java13Test.src.com.atguigu.java;
-
-import org.junit.jupiter.api.Test;
-
-/**
- * java 13æ–°ç‰¹æ€§ï¼šTextBlock ï¼ˆé¢„è§ˆï¼‰
- * @author shkstart
- * @create 2019 ä¸‹åˆ 3:00
- */
-public class TextBlockTest {
-
-    @Test
-    public void test1(){
-        String html = "<html>\n" +
-                "  <body>\n" +
-                "      <p>Hello, å°šç¡…è°·</p>\n" +
-                "  </body>\n" +
-                "</html>";
-        System.out.println(html);
-
-        System.out.println();
-
-        String html1 = """
-<html>
-  <body>
-      <p>Hello, å°šç¡…è°·</p>
-  </body>
-</html>
-""";
-        System.out.println(html1);
-    }
-
-    @Test
-    public void test2(){
-        String sql = "select employee_id,last_name,salary,department_id\n" +
-                "from employees\n" +
-                "where department_id in (40,50,60)\n" +
-                "order by department_id asc";
-
-        System.out.println(sql);
-        String sql1 = """
-select employee_id,last_name,salary,department_id
-from employees
-where department_id in (40,50,60)
-order by department_id asc
-""";
-        System.out.println(sql1);
-    }
-
-    //å…³äºTextBlockçš„åŸºæœ¬ä½¿ç”¨
-    @Test
-    public void test3(){
-        //ä»¥å¼€å§‹åˆ†éš”ç¬¦çš„è¡Œç»ˆæ­¢ç¬¦åçš„ç¬¬ä¸€ä¸ªå­—ç¬¦å¼€å§‹
-        //ä»¥ç»“æŸåˆ†éš”ç¬¦çš„ç¬¬ä¸€ä¸ªåŒå¼•å·ä¹‹å‰çš„æœ€åä¸€ä¸ªå­—ç¬¦ç»“æŸ
-        String text1 = """
-abc""";
-        String text2 = "abc";
-        System.out.println(text1 == text2);//text1å’Œtext2éƒ½æŒ‡å‘äº†å­—ç¬¦ä¸²å¸¸é‡æ± ä¸­å”¯ä¸€å®šä¹‰çš„abcå­—é¢é‡
-
-        String text3 = """
-abc
-""";
-        System.out.println(text1.length());//3
-        System.out.println(text3.length());//4
-    }
-
-    //ç©ºå­—ç¬¦ä¸²çš„è¡¨ç¤º
-    @Test
-    public void test4(){
-        String text1 = "";
-        System.out.println(text1.length());
-
-        String text2 = """
-""";
-        System.out.println(text2.length());
-    }
-
-    //é”™è¯¯çš„å†™æ³•
-    @Test
-    public void text5(){
-//        String a = """""";   // å¼€å§‹åˆ†éš”ç¬¦åæ²¡æœ‰è¡Œç»ˆæ­¢ç¬¦
-//        String b = """ """;  // å¼€å§‹åˆ†éš”ç¬¦åæ²¡æœ‰è¡Œç»ˆæ­¢ç¬¦
-//        String c = """
-//           ";        // æ²¡æœ‰ç»“æŸåˆ†éš”ç¬¦
-//String d = """
-//        abc \ def
-//        """;      // å«æœ‰æœªè½¬ä¹‰çš„åæ–œçº¿ï¼ˆè¯·å‚é˜…ä¸‹é¢çš„è½¬ä¹‰å¤„ç†ï¼‰
+// package java13Test.src.com.atguigu.java;
 //
-//        String e = "abc \ def";
-    }
-
-    //ç¼–è¯‘å™¨åœ¨ç¼–è¯‘æ—¶ä¼šåˆ é™¤æ‰è¿™äº›å¤šä½™çš„ç©ºæ ¼
-    @Test
-    public void test6(){
-        String text1 = """
-    abc
-    """;
-        System.out.println(text1.length());//4
-    }
-
-    // è½¬ä¹‰å­—ç¬¦
-    @Test
-    public void test7(){
-        String html = """
-              <html>
-                  <body>\n
-                      <p>Hello, world</p>\n
-                  </body>\n
-              </html>\n
-              """;
-        System.out.println(html);
-    }
-
-    //åœ¨æ–‡æœ¬å—å†…è‡ªç”±ä½¿ç”¨"æ˜¯åˆæ³•çš„
-    @Test
-    public void test8(){
-        String story = """
-    "When I use a word," Humpty Dumpty said,
-    in rather a scornful tone, "it means just what I
-    choose it to mean - neither more nor less."
-    "The question is," said Alice, "whether you
-    can make words mean so many different things."
-    "The question is," said Humpty Dumpty,
-    "which is to be master - that's all."
-""";
-        System.out.println(story);
-
-        String code =
-                """
-    String text = \"""
-        A text block inside a text block
-    \""";
-    """;
-        System.out.println(code);
-    }
-
-    //æ–‡æœ¬å—è¿æ¥
-    @Test
-    public void test9(){
-        String type = "String";
-        String code = """
-              public void print(""" + type + """
-               o) {
-                  System.out.println(Objects.toString(o));
-              }
-              """;
-        System.out.println(code);
-
-        //æ”¹è¿›ï¼šå¯è¯»æ€§æ›´å¥½  ---æ–¹å¼1
-        String code1 = """
-              public void print($type o) {
-                  System.out.println(Objects.toString(o));
-              }
-              """.replace("$type", type);
-        System.out.println(code1);
-
-        //æ–¹å¼2
-        String code2 = String.format("""
-              public void print(%s o) {
-                  System.out.println(Objects.toString(o));
-              }
-              """, type);
-        System.out.println(code2);
-
-        //æ–¹å¼3
-        String code3 = """
-                public void print(%s object) {
-                    System.out.println(Objects.toString(object));
-                }
-                """.formatted(type);
-        System.out.println(code3);
-    }
-}
+// import org.junit.jupiter.api.Test;
+//
+// /**
+//  * java 13ĞÂÌØĞÔ£ºTextBlock £¨Ô¤ÀÀ£©
+//  *
+//  * @author shkstart
+//  * @create 2019 ÏÂÎç 3:00
+//  */
+// public class TextBlockTest {
+//
+//     @Test
+//     public void test1() {
+//         String html = "<html>\n" +
+//                 "  <body>\n" +
+//                 "      <p>Hello, ÉĞ¹è¹È</p>\n" +
+//                 "  </body>\n" +
+//                 "</html>";
+//         System.out.println(html);
+//
+//         System.out.println();
+//
+//         String html1 = """
+//                 <html>
+//                   <body>
+//                       <p>Hello, ÉĞ¹è¹È</p>
+//                   </body>
+//                 </html>
+//                 """;
+//         System.out.println(html1);
+//     }
+//
+//     @Test
+//     public void test2() {
+//         String sql = "select employee_id,last_name,salary,department_id\n" +
+//                 "from employees\n" +
+//                 "where department_id in (40,50,60)\n" +
+//                 "order by department_id asc";
+//
+//         System.out.println(sql);
+//         String sql1 = """
+//                 select employee_id,last_name,salary,department_id
+//                 from employees
+//                 where department_id in (40,50,60)
+//                 order by department_id asc
+//                 """;
+//         System.out.println(sql1);
+//     }
+//
+//     //¹ØÓÚTextBlockµÄ»ù±¾Ê¹ÓÃ
+//     @Test
+//     public void test3() {
+//         //ÒÔ¿ªÊ¼·Ö¸ô·ûµÄĞĞÖÕÖ¹·ûºóµÄµÚÒ»¸ö×Ö·û¿ªÊ¼
+//         //ÒÔ½áÊø·Ö¸ô·ûµÄµÚÒ»¸öË«ÒıºÅÖ®Ç°µÄ×îºóÒ»¸ö×Ö·û½áÊø
+//         String text1 = """
+//                 abc""";
+//         String text2 = "abc";
+//         System.out.println(text1 == text2);//text1ºÍtext2¶¼Ö¸ÏòÁË×Ö·û´®³£Á¿³ØÖĞÎ¨Ò»¶¨ÒåµÄabc×ÖÃæÁ¿
+//
+//         String text3 = """
+//                 abc
+//                 """;
+//         System.out.println(text1.length());//3
+//         System.out.println(text3.length());//4
+//     }
+//
+//     //¿Õ×Ö·û´®µÄ±íÊ¾
+//     @Test
+//     public void test4() {
+//         String text1 = "";
+//         System.out.println(text1.length());
+//
+//         String text2 = """
+//                 """;
+//         System.out.println(text2.length());
+//     }
+//
+//     //´íÎóµÄĞ´·¨
+//     @Test
+//     public void text5() {
+// //        String a = """""";   // ¿ªÊ¼·Ö¸ô·ûºóÃ»ÓĞĞĞÖÕÖ¹·û
+// //        String b = """ """;  // ¿ªÊ¼·Ö¸ô·ûºóÃ»ÓĞĞĞÖÕÖ¹·û
+// //        String c = """
+// //           ";        // Ã»ÓĞ½áÊø·Ö¸ô·û
+// //String d = """
+// //        abc \ def
+// //        """;      // º¬ÓĞÎ´×ªÒåµÄ·´Ğ±Ïß£¨Çë²ÎÔÄÏÂÃæµÄ×ªÒå´¦Àí£©
+// //
+// //        String e = "abc \ def";
+//     }
+//
+//     //±àÒëÆ÷ÔÚ±àÒëÊ±»áÉ¾³ıµôÕâĞ©¶àÓàµÄ¿Õ¸ñ
+//     @Test
+//     public void test6() {
+//         String text1 = """
+//                 abc
+//                 """;
+//         System.out.println(text1.length());//4
+//     }
+//
+//     // ×ªÒå×Ö·û
+//     @Test
+//     public void test7() {
+//         String html = """
+//                 <html>
+//                     <body>\n
+//                         <p>Hello, world</p>\n
+//                     </body>\n
+//                 </html>\n
+//                 """;
+//         System.out.println(html);
+//     }
+//
+//     //ÔÚÎÄ±¾¿éÄÚ×ÔÓÉÊ¹ÓÃ"ÊÇºÏ·¨µÄ
+//     @Test
+//     public void test8() {
+//         String story = """
+//                     "When I use a word," Humpty Dumpty said,
+//                     in rather a scornful tone, "it means just what I
+//                     choose it to mean - neither more nor less."
+//                     "The question is," said Alice, "whether you
+//                     can make words mean so many different things."
+//                     "The question is," said Humpty Dumpty,
+//                     "which is to be master - that's all."
+//                 """;
+//         System.out.println(story);
+//
+//         String code =
+//                 """
+//                         String text = \"""
+//                             A text block inside a text block
+//                         \""";
+//                         """;
+//         System.out.println(code);
+//     }
+//
+//     //ÎÄ±¾¿éÁ¬½Ó
+//     @Test
+//     public void test9() {
+//         String type = "String";
+//         String code = """
+//                 public void print(""" + type + """
+//                  o) {
+//                     System.out.println(Objects.toString(o));
+//                 }
+//                 """;
+//         System.out.println(code);
+//
+//         //¸Ä½ø£º¿É¶ÁĞÔ¸üºÃ  ---·½Ê½1
+//         String code1 = """
+//                 public void print($type o) {
+//                     System.out.println(Objects.toString(o));
+//                 }
+//                 """.replace("$type", type);
+//         System.out.println(code1);
+//
+//         //·½Ê½2
+//         String code2 = String.format("""
+//                 public void print(%s o) {
+//                     System.out.println(Objects.toString(o));
+//                 }
+//                 """, type);
+//         System.out.println(code2);
+//
+//         //·½Ê½3
+//         String code3 = """
+//                 public void print(%s object) {
+//                     System.out.println(Objects.toString(object));
+//                 }
+//                 """.formatted(type);
+//         System.out.println(code3);
+//     }
+// }

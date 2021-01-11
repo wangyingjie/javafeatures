@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 6:18
+ * @create ÏÂÎç 6:18
  */
 public final class User {
     private final String name;

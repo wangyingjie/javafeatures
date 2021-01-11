@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 9:12
+ * @create 2019 ÏÂÎç 9:12
  */
 public class SwitchTest {
 
@@ -26,7 +26,7 @@ public class SwitchTest {
         System.out.println(i);
     }
 
-    //java 13ï¼šswitchä¸­å¼•å…¥yieldï¼Œå¯ä»¥è¿”å›å€¼ç»™ç›¸åº”çš„å˜é‡
+    //java 13£ºswitchÖĞÒıÈëyield£¬¿ÉÒÔ·µ»ØÖµ¸øÏàÓ¦µÄ±äÁ¿
     @Test
     public void testSwitch2(){
         String x = "1";
@@ -51,7 +51,7 @@ public class SwitchTest {
         System.out.println(i);
     }
 
-    //yield å’Œ return
-    //yield:ç»“æŸswitchç»“æ„
-    //return:ç»“æŸæ–¹æ³•
+    //yield ºÍ return
+    //yield:½áÊøswitch½á¹¹
+    //return:½áÊø·½·¨
 }

@@ -7,10 +7,10 @@ import java.util.Locale;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 8:03
+ * @create 2019 ÏÂÎç 8:03
  */
 public class NumberFormatTest {
-    //æ”¯æŒå‹ç¼©æ•°å­—æ ¼å¼åŒ–
+    //Ö§³ÖÑ¹ËõÊı×Ö¸ñÊ½»¯
     @Test
     public void testCompactNumberFormat(){
         var cnf = NumberFormat.getCompactNumberInstance(Locale.US, NumberFormat.Style.SHORT);

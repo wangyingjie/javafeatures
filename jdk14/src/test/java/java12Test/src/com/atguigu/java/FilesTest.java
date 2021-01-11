@@ -9,13 +9,13 @@ import java.nio.file.Path;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 8:46
+ * @create 2019 ÏÂÎç 8:46
  */
 public class FilesTest {
 
-    //ä½¿ç”¨IDEAçš„å•å…ƒæµ‹è¯•æ–¹æ³•ï¼Œé»˜è®¤çš„ç›¸å¯¹è·¯å¾„æ˜¯åœ¨å½“å‰moduleä¸‹
+    //Ê¹ÓÃIDEAµÄµ¥Ôª²âÊÔ·½·¨£¬Ä¬ÈÏµÄÏà¶ÔÂ·¾¶ÊÇÔÚµ±Ç°moduleÏÂ
     //IO : File
-    //NIO 2 : Filesæ“ä½œæœ¬åœ°æ–‡ä»¶çš„å·¥å…·ç±»  ï¼› Path:æ›¿æ¢åŸæœ‰çš„File ; Paths :å®ä¾‹åŒ–Path
+    //NIO 2 : Files²Ù×÷±¾µØÎÄ¼şµÄ¹¤¾ßÀà  £» Path:Ìæ»»Ô­ÓĞµÄFile ; Paths :ÊµÀı»¯Path
     @Test
     public void testFilesMismatch() throws IOException {
         FileWriter fileWriter = new FileWriter("tmp\\a.txt");

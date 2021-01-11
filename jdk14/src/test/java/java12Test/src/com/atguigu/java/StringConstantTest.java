@@ -4,13 +4,13 @@ import java.util.Optional;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 5:18
+ * @create 2019 ÏÂÎç 5:18
  */
 public class StringConstantTest {
 
     private static void testDescribeConstable() {
         System.out.println("======test java 12 describeConstable======");
-        String name = "å°šç¡…è°·Javaé«˜çº§å·¥ç¨‹å¸ˆ";
+        String name = "ÉĞ¹è¹ÈJava¸ß¼¶¹¤³ÌÊ¦";
         Optional<String> optional = name.describeConstable();
         System.out.println(optional.get());
     }

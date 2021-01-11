@@ -2,7 +2,7 @@ package java12Test.src.com.atguigu.java;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 3:06
+ * @create 2019 ÏÂÎç 3:06
  */
 public class SwitchTest {
     public static void main(String[] args) {
@@ -13,14 +13,14 @@ public class SwitchTest {
 //                int number = 10;
                 numberOfLetters = 4;
                 break;
-            //case ç©¿é€
+            //case ´©Í¸
             case APPLE:
             case GRAPE:
             case MANGO:
 //                int number = 20;
                 numberOfLetters = 5;
             break;
-            //é”™è¯¯çš„è¯­æ³•
+            //´íÎóµÄÓï·¨
 //            case APPLE,GRAPE,MANGO:numberOfLetters = 5;
             case ORANGE:
             case PAPAYA:

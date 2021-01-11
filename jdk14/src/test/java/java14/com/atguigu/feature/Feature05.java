@@ -4,44 +4,44 @@ package java14.com.atguigu.feature;
 import org.junit.jupiter.api.Test;
 
 /**
- * æ–‡æœ¬å—(text blocks)çš„ä½¿ç”¨
+ * ÎÄ±¾¿é(text blocks)µÄÊ¹ÓÃ
  *
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 7:13
+ * @create ÏÂÎç 7:13
  */
 public class Feature05 {
 
 
-    @Test
-    public void test1(){
-        String text1 = "The Sound of silence\n" +
-                "Hello darkness, my old friend\n" +
-                "I've come to talk with you again\n" +
-                "Because a vision softly creeping\n" +
-                "Left its seeds while I was sleeping\n" +
-                "And the vision that was planted in my brain\n" +
-                "Still remains\n" +
-                "Within the sound of silence";
-
-        System.out.println(text1);
-
-        //jdk13ä¸­çš„æ–°ç‰¹æ€§ï¼š
-        String text2 = """
-                The Sound of silence
-                Hello darkness, my old friend
-                I've come to talk with you again
-                Because a vision softly creeping
-                Left its seeds while I was sleeping
-                And the vision that was planted in my brain
-                Still remains
-                Within the sound of silence
-                """;
-        System.out.println();
-        System.out.println(text2);
-
-        System.out.println(text1.length());
-        System.out.println(text2.length());
-    }
+    // @Test
+    // public void test1(){
+    //     String text1 = "The Sound of silence\n" +
+    //             "Hello darkness, my old friend\n" +
+    //             "I've come to talk with you again\n" +
+    //             "Because a vision softly creeping\n" +
+    //             "Left its seeds while I was sleeping\n" +
+    //             "And the vision that was planted in my brain\n" +
+    //             "Still remains\n" +
+    //             "Within the sound of silence";
+    //
+    //     System.out.println(text1);
+    //
+    //     //jdk13ÖĞµÄĞÂÌØĞÔ£º
+    //     String text2 = """
+    //             The Sound of silence
+    //             Hello darkness, my old friend
+    //             I've come to talk with you again
+    //             Because a vision softly creeping
+    //             Left its seeds while I was sleeping
+    //             And the vision that was planted in my brain
+    //             Still remains
+    //             Within the sound of silence
+    //             """;
+    //     System.out.println();
+    //     System.out.println(text2);
+    //
+    //     System.out.println(text1.length());
+    //     System.out.println(text2.length());
+    // }
 
     //html
     @Test
@@ -49,30 +49,30 @@ public class Feature05 {
         String html1 = "<html lang=\"en\">\n" +
                 "<head>\n" +
                 "    <meta charset=\"UTF-8\">\n" +
-                "    <title>java14æ–°ç‰¹æ€§</title>\n" +
+                "    <title>java14ĞÂÌØĞÔ</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
                 "    <p>hello,atguigu</p>\n" +
                 "</body>\n" +
                 "</html>";
-        //jdk13ä¸­çš„æ–°ç‰¹æ€§ï¼š
-        String html2 = """
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>java14æ–°ç‰¹æ€§</title>
-                </head>
-                <body>
-                    <p>hello,atguigu</p>
-                </body>
-                </html>
-                """;
+        //jdk13ÖĞµÄĞÂÌØĞÔ£º
+        // String html2 = """
+        //         <html lang="en">
+        //         <head>
+        //             <meta charset="UTF-8">
+        //             <title>java14ĞÂÌØĞÔ</title>
+        //         </head>
+        //         <body>
+        //             <p>hello,atguigu</p>
+        //         </body>
+        //         </html>
+        //         """;
     }
 
     //json
     @Test
     public void test3() {
-        //jdk13ä¹‹å‰çš„å†™æ³•
+        //jdk13Ö®Ç°µÄĞ´·¨
         String myJson = "{\n" +
                 "    \"name\":\"Song Hongkang\",\n" +
                 "     \"address\":\"www.atguigu.com\",\n" +
@@ -80,14 +80,14 @@ public class Feature05 {
                 "}";
         System.out.println(myJson);
 
-        //jdk13çš„æ–°ç‰¹æ€§
-        String myJson1 = """
-                {
-                    "name":"Song Hongkang",
-                     "address":"www.atguigu.com",
-                    "email":"shkstart@126.com"
-                }""";
-        System.out.println(myJson1);
+        // //jdk13µÄĞÂÌØĞÔ
+        // String myJson1 = """
+        //         {
+        //             "name":"Song Hongkang",
+        //              "address":"www.atguigu.com",
+        //             "email":"shkstart@126.com"
+        //         }""";
+        // System.out.println(myJson1);
     }
 
     //sql
@@ -98,36 +98,36 @@ public class Feature05 {
                 "WHERE id > 4\n" +
                 "ORDER BY email DESC";
 
-        //jdk13æ–°ç‰¹æ€§ï¼š
-        String sql1 = """
-                SELECT id,NAME,email
-                FROM customers
-                WHERE id > 4
-                ORDER BY email DESC
-                """;
+        // //jdk13ĞÂÌØĞÔ£º
+        // String sql1 = """
+        //         SELECT id,NAME,email
+        //         FROM customers
+        //         WHERE id > 4
+        //         ORDER BY email DESC
+        //         """;
 
 
 
     }
-    //jdk14æ–°ç‰¹æ€§
-    @Test
-    public void test5(){
-        String sql1 = """
-                SELECT id,NAME,email
-                FROM customers
-                WHERE id > 4
-                ORDER BY email DESC
-                """;
-        System.out.println(sql1);
-
-        // \:å–æ¶ˆæ¢è¡Œæ“ä½œ
-        // \s:è¡¨ç¤ºä¸€ä¸ªç©ºæ ¼
-        String sql2 = """
-                SELECT id,NAME,email \
-                FROM customers\s\
-                WHERE id > 4 \
-                ORDER BY email DESC
-                """;
-        System.out.println(sql2);
-    }
+    //jdk14ĞÂÌØĞÔ
+    // @Test
+    // public void test5(){
+    //     String sql1 = """
+    //             SELECT id,NAME,email
+    //             FROM customers
+    //             WHERE id > 4
+    //             ORDER BY email DESC
+    //             """;
+    //     System.out.println(sql1);
+    //
+    //     // \:È¡Ïû»»ĞĞ²Ù×÷
+    //     // \s:±íÊ¾Ò»¸ö¿Õ¸ñ
+    //     String sql2 = """
+    //             SELECT id,NAME,email \
+    //             FROM customers\s\
+    //             WHERE id > 4 \
+    //             ORDER BY email DESC
+    //             """;
+    //     System.out.println(sql2);
+    // }
 }

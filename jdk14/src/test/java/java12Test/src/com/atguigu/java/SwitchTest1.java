@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author shkstart
- * @create 2019 ä¸‹åˆ 3:13
+ * @create 2019 ÏÂÎç 3:13
  */
 public class SwitchTest1 {
-    //java 12çš„æ–°ç‰¹æ€§
+    //java 12µÄĞÂÌØĞÔ
     @Test
     public void testSwitch1(){
         Fruit fruit = Fruit.APPLE;

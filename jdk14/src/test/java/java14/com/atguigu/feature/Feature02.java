@@ -1,12 +1,12 @@
 package java14.com.atguigu.feature;
 
 /**
- * ä½¿ç”¨çš„NullPointerExceptionçš„æç¤º
+ * Ê¹ÓÃµÄNullPointerExceptionµÄÌáÊ¾
  *  -XX:+ShowCodeDetailsInExceptionMessages
  *
  *
  * @author shkstart Email:shkstart@126.com
- * @create ä¸‹åˆ 11:14
+ * @create ÏÂÎç 11:14
  */
 public class Feature02 {
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ class Customer {
 }
 
 class Account {
-    private double balance;//ä½™é¢
+    private double balance;//Óà¶î
 
     public Account() {
     }
@@ -71,13 +71,13 @@ class Account {
         this.balance = balance;
     }
 
-    //å–é’±æ“ä½œ
+    //È¡Ç®²Ù×÷
     public void withdraw(double amt) {
         if (balance >= amt) {
             balance -= amt;
-            System.out.println("æˆåŠŸå–æ¬¾ï¼š" + amt);
+            System.out.println("³É¹¦È¡¿î£º" + amt);
         } else {
-            System.out.println("ä½™é¢ä¸è¶³ï¼Œå–æ¬¾å¤±è´¥");
+            System.out.println("Óà¶î²»×ã£¬È¡¿îÊ§°Ü");
         }
     }
 }
